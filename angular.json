@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "starter": {
+    "basecoreSPA": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -21,7 +21,7 @@
               "base64-js",
               "moment"
             ],
-            "outputPath": "dist/starter",
+            "outputPath": "dist/basecoreSPA",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -74,15 +74,15 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "starter:build",
+            "browserTarget": "basecoreSPA:build",
             "proxyConfig": "proxy.config.js"
           },
           "configurations": {
             "production": {
-              "browserTarget": "starter:build:production"
+              "browserTarget": "basecoreSPA:build:production"
             },
             "development": {
-              "browserTarget": "starter:build:development"
+              "browserTarget": "basecoreSPA:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -90,7 +90,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "starter:build"
+            "browserTarget": "basecoreSPA:build"
           }
         },
         "test": {
@@ -128,18 +128,18 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "starter:serve"
+            "devServerTarget": "basecoreSPA:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "starter:serve:production"
+              "devServerTarget": "basecoreSPA:serve:production"
             }
           }
         },
         "deploy": {
           "builder": "angular-cli-ghpages:deploy",
           "options": {
-            "baseHref": "/starter/",
+            "baseHref": "/basecoreSPA/",
             "noSilent": true
           }
         }

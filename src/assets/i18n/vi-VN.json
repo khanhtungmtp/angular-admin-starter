@@ -59,13 +59,12 @@
     "profile": "個人信息",
     "profile.overview": "概述",
     "profile.settings": "設置",
-    "extensions": "擴展組件庫",
     "sessions": "會話",
     "sessions.403": "403",
     "sessions.404": "404",
     "sessions.500": "500",
-    "utilities": "輔助工具",
-    "utilities.css-grid": "CSS 柵格",
+    "system": "System",
+    "system.users": "Users",
     "utilities.css-helpers": "CSS 輔助類",
     "menu-level": "菜單層級",
     "menu-level.level-1-1": "層級 1.1",
@@ -88,6 +87,10 @@
     "exist": "{{value}} 已存在",
     "inconsistent": "與 {{value}} 不壹致",
     "invalid_email": "郵箱格式不正確"
+  },
+  "system": {
+    "noData": "Không có dữ liệu",
+    "search": "Tìm kiếm"
   },
   "paginator": {
     "items_per_page_label": "每頁共：",
